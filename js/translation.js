@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Banner section
             banner_title: "Ihre Gesundheit liegt uns am Herzen",
-            banner_text: "In unserer Praxis bieten wir Ihnen umfassende medizinische Versorgung und individuelle Betreuung. Ob allgemeine Gesundheitsvorsorge oder spezialisierte Behandlungen – wir sind für Sie da.",
+            banner_text: "In unserer Praxis bieten wir Ihnen umfassende medizinische Versorgung und individuelle Betreuung und Behandlung. Ob allgemeine Gesundheitsvorsorge oder spezialisierte Behandlungen – wir sind für Sie da.",
             banner_read_more: "Mehr lesen",
             
             // About section
             about_title: "Über die Praxis",
-            about_text: "Unsere Praxis ist eine moderne Hausarztpraxis, die sich auf die allgemeine medizinische Versorgung von Patienten konzentriert. In einer freundlichen und barrierefreien Umgebung bieten wir Ihnen kompetente und individuelle Betreuung. Unser Team, unter der Leitung eines erfahrenen Hausarztes, hilft Ihnen bei der Diagnose und Behandlung häufiger Gesundheitsprobleme. Wir legen großen Wert auf eine vertrauensvolle Beziehung zu unseren Patienten und bieten eine umfassende Betreuung in allen alltäglichen Gesundheitsfragen.",
+            about_text: "Unsere Praxis konzentriert sich auf die allgemeine medizinische Versorgung von Patienten. In einer freundlichen und barrierefreien Umgebung bieten wir Ihnen kompetente und individuelle Betreuung und Behandlung. Unser Team, unter der Leitung eines erfahrenen Hausarztes, hilft Ihnen bei der Diagnose und Behandlung häufiger Gesundheitsprobleme. Wir legen großen Wert auf eine vertrauensvolle Beziehung zu unseren Patienten und bieten eine umfassende Betreuung und Behandlung in allen alltäglichen Gesundheitsfragen.",
             about_read_more: "Mehr lesen",
             
             // Treatment section
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 {
                     number: "01",
                     title: "Allgemeine Gesundheitsvorsorge",
-                    text: "Regelmäßige Check-ups und Vorsorgeuntersuchungen zur Unterstützung Ihrer Gesundheit und zur Früherkennung von Krankheiten."
+                    text: "Umfassende Behandlung und Betreuung der Patienten, unter Berücksichtigung ihres familiären und sozialen Umfeldes, in Notfall-, Akut- und Langzeitversorgungssituationen."
                 },
                 {
                     number: "02",
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 {
                     number: "04",
                     title: "Familienmedizin",
-                    text: "Umfassende Betreuung von Patienten aller Altersgruppen, einschließlich Kinder, Erwachsene und Senioren."
+                    text: "Umfassende Betreuung und Behandlung von Patienten einschließlich Erwachsene und Senioren."
                 }
             ],
             
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // About section
             about_title: "Despre cabinetul medical",
-            about_text: "Cabinetul nostru este dedicat îngrijirii generale a pacienților, oferind servicii medicale competente și personalizate. Într-o atmosferă prietenoasă și accesibilă, ne concentrăm pe prevenție, diagnostic și tratamentul problemelor de sănătate frecvente. Echipa noastră, condusă de un medic de familie cu experiență, pune un accent deosebit pe construirea unei relații de încredere și oferă suport medical adaptat nevoilor fiecărui pacient.",
+            about_text: "Cabinetul nostru se concentrează pe îngrijirea medicală generală a pacienților. Într-un mediu prietenos și accesibil, vă oferim asistență și tratament competent și personalizat. Echipa noastră, sub conducerea unui medic de familie experimentat, vă ajută în diagnosticarea și tratarea problemelor comune de sănătate. Punem un mare accent pe o relație de încredere cu pacienții noștri și oferim îngrijire și tratament complet pentru toate problemele cotidiene de sănătate.",
             about_read_more: "Citește mai mult",
             
             // Treatment section
@@ -104,8 +104,8 @@ document.addEventListener('DOMContentLoaded', function() {
             treatments: [
                 {
                     number: "01",
-                    title: "Consultații generale și prevenție",
-                    text: "Consultații regulate și controale preventive pentru susținerea sănătății și depistarea timpurie a bolilor."
+                    title: "Îngrijire generală a sănătății",
+                    text: "Tratament și îngrijire cuprinzătoare a pacienților, ținând cont de contextul lor familial și social, în situații de urgență, acute și de îngrijire pe termen lung."
                 },
                 {
                     number: "02",
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 {
                     number: "04",
                     title: "Medicină de familie",
-                    text: "Îngrijire completă pentru pacienți de toate vârstele, inclusiv copii, adulți și seniori."
+                    text: "Îngrijire și tratament complet pentru pacienți, inclusiv adulți și seniori."
                 }
             ],
             
