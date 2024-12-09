@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_thursday_text: "Joi: ",
             footer_friday_text: "Vineri: ",
             footer_saturday_text: "Sâmbătă: ",
-            footer_sunday_text: "Duminica: "
+            footer_sunday_text: "Duminică: "
         }
         
     };
