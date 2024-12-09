@@ -1017,6 +1017,7 @@ p.doctorname_text {
     width: 100%;
     float: left;
     padding-bottom: 0px;
+    
 }
 
 .contact_taital {
@@ -1331,4 +1332,32 @@ input.mail_bt::placeholder {
 
 .margim_90 {
     margin: 90px 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .header_top_main {
+        flex-direction: column;  /* Stack elements vertically on small screens */
+        align-items: flex-start;  /* Align items to the left */
+    }
+
+    .call_text, .call_text_1, .call_text_2 {
+        text-align: left;  /* Align text to the left on smaller screens */
+        margin-bottom: 10px;  /* Space out the elements */
+        font-size: 14px;  /* Adjust font size for smaller devices */
+        margin: 5px 0; /* Reduce spacing for smaller screens */
+    }
+
+    .call_text_3 {
+        justify-content: flex-start;  /* Align language switcher to the left */
+    }
+
+    .call_text_3 img {
+        margin-left: 0;  /* Remove margin between flags */
+        margin-right: 5px;  /* Add space between flags */
+    }
+    .header_top_section {
+        padding: 10px 0;  /* Reduce padding on mobile */
+        display: block !important;  /* Force visibility */
+    }
+    
 }

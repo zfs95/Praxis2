@@ -19,31 +19,31 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // About section
             about_title: "Über die Praxis",
-            about_text: "Unsere Praxis ist ein modernes Gesundheitszentrum, das sich auf die allgemeine medizinische Versorgung von Patienten konzentriert. In einer freundlichen und barrierefreien Umgebung bieten wir Ihnen kompetente und individuelle Betreuung. Unser Team, unter der Leitung eines erfahrenen Hausarztes, ist darauf spezialisiert, Ihnen bei der Diagnose und Behandlung häufig auftretender Gesundheitsprobleme zu helfen. Wir legen großen Wert auf eine vertrauensvolle Beziehung zu unseren Patienten und bieten eine umfassende Betreuung in allen alltäglichen Gesundheitsfragen.",
+            about_text: "Unsere Praxis ist eine moderne Hausarztpraxis, die sich auf die allgemeine medizinische Versorgung von Patienten konzentriert. In einer freundlichen und barrierefreien Umgebung bieten wir Ihnen kompetente und individuelle Betreuung. Unser Team, unter der Leitung eines erfahrenen Hausarztes, hilft Ihnen bei der Diagnose und Behandlung häufiger Gesundheitsprobleme. Wir legen großen Wert auf eine vertrauensvolle Beziehung zu unseren Patienten und bieten eine umfassende Betreuung in allen alltäglichen Gesundheitsfragen.",
             about_read_more: "Mehr lesen",
             
             // Treatment section
-            treatment_title: "Krankenhausbehandlung",
+            treatment_title: "Medizinische Leistungen",
             treatments: [
                 {
                     number: "01",
-                    title: "Nephrologische Versorgung",
-                    text: "Veränderung in einer Form, durch eingefügten Humor oder zufällige Wörter, die nicht einmal leicht aussehen."
+                    title: "Allgemeine Gesundheitsvorsorge",
+                    text: "Regelmäßige Check-ups und Vorsorgeuntersuchungen zur Unterstützung Ihrer Gesundheit und zur Früherkennung von Krankheiten."
                 },
                 {
                     number: "02",
-                    title: "Augenpflege",
-                    text: "Veränderung in einer Form, durch eingefügten Humor oder zufällige Wörter."
+                    title: "Diagnose und Behandlung häufiger Erkrankungen",
+                    text: "Behandlung von Beschwerden wie Erkältungen, Infektionen, Bluthochdruck und anderen häufig auftretenden Gesundheitsproblemen."
                 },
                 {
                     number: "03",
-                    title: "Kinderklinik",
-                    text: "Veränderung in einer Form, durch eingefügten Humor oder zufällige Wörter."
+                    title: "Impfungen und Reiseberatung",
+                    text: "Beratung zu Schutzimpfungen und individuelle Gesundheitsberatung für Reisen."
                 },
                 {
                     number: "04",
-                    title: "Pränatale Versorgung",
-                    text: "Veränderung in einer Form, durch eingefügten Humor oder zufällige Wörter."
+                    title: "Familienmedizin",
+                    text: "Umfassende Betreuung von Patienten aller Altersgruppen, einschließlich Kinder, Erwachsene und Senioren."
                 }
             ],
             
@@ -91,36 +91,36 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Banner section
             banner_title: "Grija noastră, sănătatea dumneavoastră",
-            banner_text: "La clinica noastră, vă oferim servicii medicale complete și îngrijire personalizată. Indiferent dacă este vorba de prevenție sau tratamente specializate, suntem aici pentru dumneavoastră.",
+            banner_text: "La cabinetul nostru, vă oferim servicii medicale complete și îngrijire personalizată. Indiferent dacă este vorba de prevenție sau tratamente specializate, suntem aici pentru dumneavoastră.",
             banner_read_more: "Citește mai mult",
             
             // About section
             about_title: "Despre cabinetul medical",
-            about_text: "Cabinetul nostru este un centru medical modern, axat pe îngrijirea generală a pacienților. Într-o atmosferă prietenoasă și accesibilă, oferim îngrijire medicală competentă și personalizată. Echipa noastră, condusă de un medic de familie cu experiență, este specializată în diagnosticarea și tratamentele celor mai frecvente probleme de sănătate. Punem un accent deosebit pe construirea unei relații de încredere cu pacienții noștri și oferim îngrijire completă în toate aspectele de sănătate de zi cu zi.",
+            about_text: "Cabinetul nostru este dedicat îngrijirii generale a pacienților, oferind servicii medicale competente și personalizate. Într-o atmosferă prietenoasă și accesibilă, ne concentrăm pe prevenție, diagnostic și tratamentul problemelor de sănătate frecvente. Echipa noastră, condusă de un medic de familie cu experiență, pune un accent deosebit pe construirea unei relații de încredere și oferă suport medical adaptat nevoilor fiecărui pacient.",
             about_read_more: "Citește mai mult",
             
             // Treatment section
-            treatment_title: "Tratamente la spital",
+            treatment_title: "Servicii medicale oferite",
             treatments: [
                 {
                     number: "01",
-                    title: "Îngrijire nefrologică",
-                    text: "Modificare într-o formă, prin introducerea de umor sau cuvinte întâmplătoare care nu arată nici măcar apropiat."
+                    title: "Consultații generale și prevenție",
+                    text: "Consultații regulate și controale preventive pentru susținerea sănătății și depistarea timpurie a bolilor."
                 },
                 {
                     number: "02",
-                    title: "Îngrijire oculară",
-                    text: "Modificare într-o formă, prin introducerea de umor sau cuvinte întâmplătoare."
+                    title: "Diagnostic și tratament pentru afecțiuni comune",
+                    text: "Tratamentul afecțiunilor frecvente, precum răcelile, infecțiile, hipertensiunea și alte probleme de sănătate des întâlnite."
                 },
                 {
                     number: "03",
-                    title: "Clinică pediatrică",
-                    text: "Modificare într-o formă, prin introducerea de umor sau cuvinte întâmplătoare."
+                    title: "Vaccinări și consiliere pentru călătorii",
+                    text: "Consiliere privind vaccinările necesare și sfaturi de sănătate personalizate pentru călătorii."
                 },
                 {
                     number: "04",
-                    title: "Îngrijire prenatală",
-                    text: "Modificare într-o formă, prin introducerea de umor sau cuvinte întâmplătoare."
+                    title: "Medicină de familie",
+                    text: "Îngrijire completă pentru pacienți de toate vârstele, inclusiv copii, adulți și seniori."
                 }
             ],
             
@@ -331,5 +331,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const lang = this.getAttribute('alt').toLowerCase();
             switchLanguage(lang);
         });
+    });
+});
+document.getElementById('scroll-to-bottom').addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent default link behavior
+    window.scrollTo({
+        top: document.body.scrollHeight, // Scroll to the bottom of the page
+        behavior: 'smooth' // Smooth scrolling effect
     });
 });
