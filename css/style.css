@@ -1334,6 +1334,14 @@ input.mail_bt::placeholder {
     margin: 90px 0px;
 }
 
+.call_text,
+.call_text_1,
+.call_text_2,
+.call_text_3 {
+    width: auto;
+    float: none;
+}
+
 @media screen and (max-width: 768px) {
     .header_top_main {
         flex-direction: column;  /* Stack elements vertically on small screens */

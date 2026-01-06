@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Contact section
             location_text_title: "Standort",
-            language_text_header: "Sprache",
+            language_text_header: "Limbă",
 
             praxis_services_text : "Medizinische Dienstleistungen",
             //Allgemeine medizinische Betreuung
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Contact section
             location_text_title: "Locație",
-            language_text_header: "Limbă",
+            language_text_header: "Sprache",
 
             praxis_services_text : "Servicii Medicale",
             //Îngrijire Medicală Generală
@@ -175,6 +175,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // if (callTextElements[1]) callTextElements[1].innerHTML = `<span class="padding_right0"><i class="fa fa-envelope" aria-hidden="true"></i></span> ${currentLang.call_email}`;
             const locationTileHeader = document.getElementById('location_header');
             if (locationTileHeader) locationTileHeader.textContent = currentLang.location_text_title;
+            const languageLabelHeader = document.getElementById('language_label_header');
+            if (languageLabelHeader) {
+                languageLabelHeader.textContent = currentLang.language_text_header;
+            }
 
             // Navigation links
             const navLinks = document.querySelectorAll('.nav-link');
