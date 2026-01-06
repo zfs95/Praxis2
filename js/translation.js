@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // Navigation
             nav_home: "Startseite",
             nav_about: "Über uns",
-            nav_doctors: "Unser Team",
             nav_contact: "Kontakt",
             
             // Banner section
@@ -47,22 +46,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             ],
             
-            // Doctors section
-            doctors_title: "Unsere Team",
-            
             // Contact section
             location_text_title: "Standort",
             language_text_header: "Limbă",
-
             praxis_services_text : "Medizinische Dienstleistungen",
-            //Allgemeine medizinische Betreuung
             
             // Footer section
             footer_address: "Adresse",
             footer_useful_links: "Nützliche Links",
             footer_useful_links_home: "Startseite",
             footer_useful_links_about_us: "Über uns",
-            footer_useful_links_doctors: "Unser Team",
             footer_useful_links_contact: "Kontakt",
             footer_help_support: "Hilfe & Unterstützung",
             footer_help_text: "Im Gegensatz zur Verwendung von „Inhalt hier, Inhalt hier“, wodurch es wie lesbares Deutsch aussieht. Viele Desktop-Publishing-Pakete und Webseiten.",
@@ -75,8 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_friday_text: "Freitag: ",
             footer_saturday_text: "Samstag: ",
             footer_sunday_text: "Sonntag: "
-
-
         },
         ro: {
             // Header section
@@ -86,7 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // Navigation
             nav_home: "Acasă",
             nav_about: "Despre noi",
-            nav_doctors: "Echipa Noastră",
             nav_contact: "Contact",
             
             // Banner section
@@ -124,22 +114,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             ],
             
-            // Doctors section
-            doctors_title: "Echipa Noastră",
-            
             // Contact section
             location_text_title: "Locație",
             language_text_header: "Sprache",
-
             praxis_services_text : "Servicii Medicale",
-            //Îngrijire Medicală Generală
             
             // Footer section
             footer_address: "Adresă",
             footer_useful_links: "Link-uri utile",
             footer_useful_links_home: "Acasă",
             footer_useful_links_about_us: "Despre noi",
-            footer_useful_links_doctors: "Echipa Noastră",
             footer_useful_links_contact: "Contact",
             footer_help_support: "Ajutor și suport",
             footer_help_text: "S-a opus folosirii „Conținut aici, conținut aici”, făcându-l să pară ca o engleză lizibilă. Multe pachete de desktop publishing și pagini web",
@@ -153,68 +137,49 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_saturday_text: "Sâmbătă: ",
             footer_sunday_text: "Duminică: "
         }
-        
     };
 
     // Function to apply translations
     function applyTranslations(lang) {
-        // Ensure the language exists in our translations
-        if (!translations[lang]) {
-            console.error('Language not found:', lang);
-            return;
-        }
-
-        // Get the current language translations
+        if (!translations[lang]) return;
         const currentLang = translations[lang];
 
-        // Update header section
         try {
-            // Phone and email
-            const callTextElements = document.querySelectorAll('.call_text, .call_text_2');
-            // // if (callTextElements[0]) callTextElements[0].innerHTML = `<span class="padding_right0"><i class="fa fa-phone" aria-hidden="true"></i></span> ${currentLang.call_phone}`;
-            // if (callTextElements[1]) callTextElements[1].innerHTML = `<span class="padding_right0"><i class="fa fa-envelope" aria-hidden="true"></i></span> ${currentLang.call_email}`;
             const locationTileHeader = document.getElementById('location_header');
             if (locationTileHeader) locationTileHeader.textContent = currentLang.location_text_title;
+
             const languageLabelHeader = document.getElementById('language_label_header');
-            if (languageLabelHeader) {
-                languageLabelHeader.textContent = currentLang.language_text_header;
-            }
+            if (languageLabelHeader) languageLabelHeader.textContent = currentLang.language_text_header;
 
-            // Navigation links
+            // Header nav links
             const navLinks = document.querySelectorAll('.nav-link');
-            const customMenuLinks = document.querySelectorAll('.custom_menu ul li a');
-
-            if (navLinks.length >= 4) {
+            if (navLinks.length >= 3) {
                 navLinks[0].textContent = currentLang.nav_home;
                 navLinks[1].textContent = currentLang.nav_about;
-                navLinks[2].textContent = currentLang.nav_doctors;
-                navLinks[3].textContent = currentLang.nav_contact;
+                navLinks[2].textContent = currentLang.nav_contact;
             }
 
-            if (customMenuLinks.length >= 4) {
+            // Custom menu links
+            const customMenuLinks = document.querySelectorAll('.custom_menu ul li a');
+            if (customMenuLinks.length >= 3) {
                 customMenuLinks[0].textContent = currentLang.nav_home;
                 customMenuLinks[1].textContent = currentLang.nav_about;
-                customMenuLinks[2].textContent = currentLang.nav_doctors;
-                customMenuLinks[3].textContent = currentLang.nav_contact;
+                customMenuLinks[2].textContent = currentLang.nav_contact;
             }
 
-            // Banner section (for index page)
+            // Banner section
             const bannerTitle = document.querySelector('.banner_taital');
             if (bannerTitle) bannerTitle.textContent = currentLang.banner_title;
-
             const bannerText = document.querySelector('.banner_text');
             if (bannerText) bannerText.textContent = currentLang.banner_text;
-
             const bannerReadMore = document.querySelector('.banner_section .read_bt a');
             if (bannerReadMore) bannerReadMore.textContent = currentLang.banner_read_more;
 
-            // About section (for about page)
+            // About section
             const aboutTitle = document.querySelector('.about_taital');
             if (aboutTitle) aboutTitle.textContent = currentLang.about_title;
-
             const aboutText = document.querySelector('.about_text');
             if (aboutText) aboutText.textContent = currentLang.about_text;
-
             const aboutReadMore = document.querySelector('.about_section .about_bt a');
             if (aboutReadMore) aboutReadMore.textContent = currentLang.about_read_more;
 
@@ -226,7 +191,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     const numberText = box.querySelector('.number_text');
                     const careText = box.querySelector('.care_text');
                     const treatmentText = box.querySelector('.treatment_text, .treatment_text_1');
-
                     if (numberText) numberText.textContent = treatment.number;
                     if (careText) careText.textContent = treatment.title;
                     if (treatmentText) treatmentText.textContent = treatment.text;
@@ -236,35 +200,21 @@ document.addEventListener('DOMContentLoaded', function() {
             const praxisService = document.getElementById('praxis_services');
             if (praxisService) praxisService.textContent = currentLang.praxis_services_text;
 
-            const ourtTeamTile = document.getElementById('ourDoctors');
-            if (ourtTeamTile) ourtTeamTile.textContent = currentLang.nav_doctors;
-
             const locationTileFooter = document.getElementById('location_footer');
             if (locationTileFooter) locationTileFooter.textContent = currentLang.location_text_title;
-
-            // Footer help & support
-            const footerHelpSupportTitle = document.getElementById('support');
-            if (footerHelpSupportTitle) footerHelpSupportTitle.textContent = currentLang.footer_help_support;
-
-            const footerHelpSupportText = document.getElementById('supportText');
-            if (footerHelpSupportText) footerHelpSupportText.textContent = currentLang.footer_help_text;
 
             // Footer useful links
             const footerUsefulLinksTitle = document.getElementById('helpfulLinks');
             if (footerUsefulLinksTitle) footerUsefulLinksTitle.textContent = currentLang.footer_useful_links;
-
             const footerUsefulLinksTitleHome = document.getElementById('home');
             if (footerUsefulLinksTitleHome) footerUsefulLinksTitleHome.textContent = currentLang.footer_useful_links_home;
             const footerUsefulLinksTitleAbout = document.getElementById('about');
             if (footerUsefulLinksTitleAbout) footerUsefulLinksTitleAbout.textContent = currentLang.footer_useful_links_about_us;
-            const footerUsefulLinksTitleDoctors = document.getElementById('doctors');
-            if (footerUsefulLinksTitleDoctors) footerUsefulLinksTitleDoctors.textContent = currentLang.footer_useful_links_doctors;
             const footerUsefulLinksTitleContact = document.getElementById('contact');
             if (footerUsefulLinksTitleContact) footerUsefulLinksTitleContact.textContent = currentLang.footer_useful_links_contact;
 
             const footerSchedule = document.getElementById('schedule');
             if (footerSchedule) footerSchedule.textContent = currentLang.footer_schedule_text;
-
             const footerMondayText = document.getElementById('monday');
             if (footerMondayText) footerMondayText.textContent = currentLang.footer_monday_text;
             const footerTuesdayText = document.getElementById('tuesday');
@@ -284,16 +234,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const footerClosedSundayText = document.getElementById('sunday_closed');
             if (footerClosedSundayText) footerClosedSundayText.textContent = currentLang.footer_closed_text;
 
-            // Footer address title
             const footerAddressTitle = document.getElementById('address');
             if (footerAddressTitle) footerAddressTitle.textContent = currentLang.footer_address;
-
-            // Footer address lines
-            const footerAddressLines = document.querySelectorAll('.footer_section .location_main li a span');
-            if (footerAddressLines.length >= 2) {
-                footerAddressLines[0].textContent = currentLang.footer_address_lines[0];
-                footerAddressLines[1].textContent = currentLang.footer_address_lines[1];
-            }
 
             console.log(`Language switched to ${lang}`);
         } catch (error) {
@@ -303,16 +245,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to switch language
     window.switchLanguage = function(lang) {
-        // Save language preference to localStorage
         localStorage.setItem('selectedLanguage', lang);
-        
-        // Apply translations
         applyTranslations(lang);
 
-    // Toggle language images
-    const langDeImg = document.getElementById('lang-de');
-    const langRoImg = document.getElementById('lang-ro');
-
+        const langDeImg = document.getElementById('lang-de');
+        const langRoImg = document.getElementById('lang-ro');
         if (lang === 'de') {
             langDeImg.style.display = 'none';
             langRoImg.style.display = 'inline-block';
@@ -322,13 +259,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
-    // Check for saved language preference on page load
     const savedLanguage = localStorage.getItem('selectedLanguage') || 'de';
-    
-    // Apply saved or default language
     applyTranslations(savedLanguage);
 
-    // Optional: Add event listeners to language switcher images
     const languageImages = document.querySelectorAll('.call_text_3 img');
     languageImages.forEach(img => {
         img.addEventListener('click', function() {
@@ -337,10 +270,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
 document.getElementById('scroll-to-bottom').addEventListener('click', function (e) {
-    e.preventDefault(); // Prevent default link behavior
+    e.preventDefault();
     window.scrollTo({
-        top: document.body.scrollHeight, // Scroll to the bottom of the page
-        behavior: 'smooth' // Smooth scrolling effect
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
     });
 });
